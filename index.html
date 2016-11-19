@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Turn Server Tester</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+</head>
+
+<body>
+  <h1>Turn Server Tester</h1>
+  <section class="test">
+    <label for="server">Turn Server
+      <div class="up">
+      <input type="text" name="url" id="url" placeholder="Turn URL"/>
+      :<input type="number" name="port" id="port" placeholder="Port"/>
+    </div>
+    </label>
+
+    <label for="username">Username
+      <input type="text" name="username" id="username" placeholder="Turn Username"/>
+    </label>
+
+    <label for="password">Password
+      <input type="text" name="password" id="password" placeholder="Turn Password"/>
+    </label>
+
+    <label>Transport: &nbsp;&nbsp;<input type="radio" name="transport" id="tcp" value="tcp" />
+    TCP&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="transport" id="udp" value="udp" checked/>UDP</label>
+
+    <div class="clear"></div>
+    <div class="smb_dv">
+      <input id="test_btn" type="submit" value="Test" />
+    </div>
+
+    <div id="prgs">
+      <div class="w3-progress-container">
+        <div id="prgsbar" class="w3-progressbar w3-blue" style="width:0%">
+        </div>
+      </div>
+      <br>
+      <label id="result"></label>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
